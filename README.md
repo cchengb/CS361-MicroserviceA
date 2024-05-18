@@ -41,18 +41,21 @@ python test_music_service.py
 # Programmatically Requesting Data from the Microservice
 Here is how the script makes requests to the microservice, you could find the code under the test_music_service.py, just need to run python test_musci_service.py:
 
-<img width="452" alt="image" src="https://github.com/cchengb/CS361-Microsoftservice-A/assets/145725044/7f3ad6e2-daae-42e4-b6c4-d07ca70bf99e">
+<img width="451" alt="image" src="https://github.com/cchengb/CS361-MicroserviceA/assets/145725044/19dfbbca-5ea6-4af5-873f-48369249fe20">
+
 
 # Handling the Response and Downloading Files
 Upon receiving a successful response, the script processes the JSON data, retrieves the URL of the generated music file, and downloads it into the downloads folder, it also will play automatically in the background, you can find the dowloaded mp3 under the folder downloads:
 
-<img width="496" alt="image" src="https://github.com/cchengb/CS361-Microsoftservice-A/assets/145725044/003f3759-a2d1-4791-9150-1e674a08f638">
+<img width="494" alt="image" src="https://github.com/cchengb/CS361-MicroserviceA/assets/145725044/d22a2419-8fec-47d3-aa0a-7fd7d33ad6e0">
 
-<img width="288" alt="image" src="https://github.com/cchengb/CS361-Microsoftservice-A/assets/145725044/ce4a5244-7623-4aaf-8556-df41c3983c85">
+
+<img width="297" alt="image" src="https://github.com/cchengb/CS361-MicroserviceA/assets/145725044/7f6bd3f4-dc95-4e53-b777-3fbf46032736">
+
 
 
 # UML Sequence Diagram Elements more details as below:
- <img width="468" alt="image" src="https://github.com/cchengb/CS361-Microsoftservice-A/assets/145725044/914b7702-7d58-4270-b4f6-9cfac3aafdc8">
+<img width="471" alt="image" src="https://github.com/cchengb/CS361-MicroserviceA/assets/145725044/d36c4a3e-9e62-4885-96b1-fa11597c181c">
 
 Participants:
 1.	Client (Test Music Service): Executes the GET request.
