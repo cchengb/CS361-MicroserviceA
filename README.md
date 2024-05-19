@@ -13,7 +13,7 @@ Prerequisites
 7. An environment capable of playing MP3 files (e.g., VLC, browser, or media player)
     
 # Installation
-1.	Clone this repository to your local machine or (you could download the music.py, index.html, test_music_server.py, and the soundfonts from the above link).
+1.	Clone this repository to your local machine or (you could download the music.py, templates>index.html, test_music_server.py, and the soundfonts from the above link).
 2.	Install the required Python dependencies, if you use the pycharm run it under
 source .venv/bin/activate  
 pip install flask music21 requests 
