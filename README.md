@@ -45,7 +45,7 @@ Here is how the script makes requests to the microservice, you could find the co
 
 
 # Handling the Response and Downloading Files
-Upon receiving a successful response, the script processes the JSON data, retrieves the URL of the generated music file, and downloads it into the downloads folder, it also will play automatically in the background, you can find the dowloaded mp3 under the folder downloads:
+Upon receiving a successful response, the script processes the JSON data, retrieves the path of the generated music file, and downloads it into the downloads folder, it also will play automatically in the background, you can find the dowloaded mp3 under the folder downloads:
 
 <img width="494" alt="image" src="https://github.com/cchengb/CS361-MicroserviceA/assets/145725044/d22a2419-8fec-47d3-aa0a-7fd7d33ad6e0">
 
