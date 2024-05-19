@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Music</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#generateForm').submit(function(event){
+            event.preventDefault(); // Prevent the default form submission
+            $.ajax({
+                url: '/generate',
+                type: 'get',
+                data: $(this).serialize(),
+                success: function(data) {
+                    // Create a download link for the MP3 file
+                    var downloadLink = '<a href="' + data.file.replace('.mid', '.mp3') + '" download="GeneratedMusic.mp3">Download MP3 File</a>';
+                    $('#results').html(downloadLink);
+
+                    // Optionally, autoplay the MP3 file directly in the browser
+                    var audioPlayer = '<audio controls autoplay src="' + data.file.replace('.mid', '.mp3') + '" type="audio/mpeg"></audio>';
+                    $('#results').append(audioPlayer);
+                }
+            });
+        });
+    });
+    </script>
+</head>
+<body>
+    <h1>Generate Music</h1>
+    <form id="generateForm">
+        <label for="num_notes">Number of Notes:</label>
+        <input type="number" id="num_notes" name="num_notes" value="30"><br><br>
+        <label for="scale">Scale:</label>
+        <select id="scale" name="scale">
+            <option value="C_major">C Major</option>
+            <option value="G_major">G Major</option>
+            <option value="A_minor">A Minor</option>
+            <option value="Blues">Blues</option>
+            <option value="Pentatonic">Pentatonic</option>
+        </select><br><br>
+        <label for="instrument">Instrument:</label>
+        <select id="instrument" name="instrument">
+            <option value="Piano">Piano</option>
+            <option value="Violin">Violin</option>
+            <option value="Guitar">Guitar</option>
+        </select><br><br>
+        <button type="submit">Generate Music</button>
+    </form>
+    <div id="results"></div>
+</body>
+</html>
