@@ -10,7 +10,10 @@ Prerequisites
 4. music21 library
 5. soundfonts(GeneralUserGS.sf2) download link: https://www.dropbox.com/s/4x27l49kxcwamp5/GeneralUser_GS_1.471.zip?dl=1
    create the folder soundfonts under the root directory, then put the download GeneralUserGS.sf2 under soundfont folder.
-7. An environment capable of playing MP3 files (e.g., VLC, browser, or media player)
+6. An environment capable of playing MP3 files (e.g., VLC, browser, or media player)
+7. Install the fluidsynth. Mac OS:  if you have Homebrew installed (a package manager for macOS), you can install FluidSynth by opening a terminal and running: brew install fluidsynth, windows need to download the fluidsysnth.ext
+
+
     
 # Installation
 1.	Clone this repository to your local machine or (you could download the music.py, templates>index.html, test_music_server.py, and the soundfonts from the above link).
