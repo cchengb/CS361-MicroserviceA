@@ -13,12 +13,8 @@ Prerequisites
 6. An environment capable of playing MP3 files (e.g., VLC, browser, or media player)
 7. Install the fluidsynth. Mac OS:  if you have Homebrew installed (a package manager for macOS), you can install FluidSynth by opening a terminal and running: brew install fluidsynth, windows need to download the fluidsysnth.exe from: https://github.com/FluidSynth/fluidsynth/releases
    use the code for the fluidsynth in windows, add the the fluidsynth_path, then replace the 'fluidsynth':
-  	 fluidsynth_path = r'C:\Program Files\FluidSynth\fluidsynth.exe'
-	try:
-    		subprocess.run([fluidsynth_path, '-ni', sound_font, midi_path, '-F', wav_path, '-r', '44100'], check=True)
-	except subprocess.CalledProcessError as e:
-    	logging.error("Failed to convert MIDI to WAV: %s", str(e))
-    	return jsonify({"error": "Failed to convert MIDI to WAV", "exception": str(e)}), 500
+  ![image](https://github.com/cchengb/CS361-MicroserviceA/assets/145725044/fdf94c66-8010-4f5b-86b9-2cbcc310746e)
+	
     
 # Installation
 1.	Clone this repository to your local machine or (you could download the music.py, templates>index.html, test_music_server.py, and the soundfonts from the above link).
