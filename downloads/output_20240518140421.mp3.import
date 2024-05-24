@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://blf8jefrcy7qh"
+path="res://.godot/imported/output_20240518140421.mp3-009325fdd6246df7a47d59dec827ccb4.mp3str"
+
+[deps]
+
+source_file="res://Music Generator/CS361-MicroserviceA/downloads/output_20240518140421.mp3"
+dest_files=["res://.godot/imported/output_20240518140421.mp3-009325fdd6246df7a47d59dec827ccb4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
